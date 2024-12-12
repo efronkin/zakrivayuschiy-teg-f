@@ -26,9 +26,9 @@
 
 @supports (font-variation-settings: normal) {
   .page {
-      font-family: var(--main-font), sans-serif;
-      font-weight: var(--main-text-weight);
-      background-color: #fff;
+    font-family: var(--main-font), sans-serif;
+    font-weight: var(--main-text-weight);
+    background-color: #fff;
   }
 }
 
@@ -114,28 +114,32 @@
   filter: blur(20px);
 }
 
+.filter-blur-invert {
+  filter: invert(10%) blur(1px);
+}
+
 .image-label {
   position: absolute;
   top: 25px;
   right: 25px;
   font-family: var(--accent-font);
   font-size: var(--accent-font-size);
-  text-shadow: 
-  -1px -1px 0 var(--shadow-color),
-  1px -1px 0 var(--shadow-color),
-  -1px 1px 0 var(--shadow-color),
-  1px 1px 0 var(--shadow-color);
+  text-shadow: -1px -1px 0 var(--shadow-color), 1px -1px 0 var(--shadow-color),
+    -1px 1px 0 var(--shadow-color), 1px 1px 0 var(--shadow-color);
   opacity: 50%;
   text-transform: uppercase;
 }
 
-@supports ((text-stroke: 0.5px var(--shadow-color)) or (-webkit-text-stroke: 0.5px var(--shadow-color))) { 
-  .image-label { 
+@supports (
+  (text-stroke: 0.5px var(--shadow-color)) or
+    (-webkit-text-stroke: 0.5px var(--shadow-color))
+) {
+  .image-label {
     -webkit-text-stroke: 0.5px var(--shadow-color); /*0.5 для большего соответствия макету. При 1 пикселе текст сливается с тенью*/
-    text-stroke: 0.5px var(--shadow-color); 
-    text-shadow: none; 
-  } 
-} 
+    text-stroke: 0.5px var(--shadow-color);
+    text-shadow: none;
+  }
+}
 
 .card__footer {
   padding: 27px 25px 20px;
@@ -175,7 +179,6 @@
 }
 
 .like-icon {
-  
 }
 
 .sparks {
@@ -184,13 +187,13 @@
 
 .contour {
   transition: fill 0.3s linear;
-  transition-delay: 0.16s
+  transition-delay: 0.16s;
 }
 
 .core {
   fill: transparent;
   transition: fill 0.3s linear;
-  transition-delay: 0.1s
+  transition-delay: 0.1s;
 }
 
 .like-icon:hover .core {
@@ -345,7 +348,11 @@ dialog[open] {
   font-size: var(--accent-font-size);
   font-weight: var(--main-text-weight);
   padding-block: 30px; /*подумать над решением*/
-  padding-inline: clamp(30px, calc(30px + (12 * ((1440px - 100vw) / 1065))), 42px);
+  padding-inline: clamp(
+    30px,
+    calc(30px + (12 * ((1440px - 100vw) / 1065))),
+    42px
+  );
   inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
 }
 
@@ -353,7 +360,7 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.save-popup{
+.save-popup {
   text-transform: uppercase;
 }
 
@@ -369,8 +376,7 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 
-@media (width <=375px) { 
-
+@media (width <=375px) {
   .save-button {
     flex-direction: column;
   }
