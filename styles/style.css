@@ -22,6 +22,7 @@
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-variation-settings: "wght" var(--main-text-weight);
 }
 
 @supports (font-variation-settings: normal) {
