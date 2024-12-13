@@ -6,7 +6,7 @@
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/icon.svg" type="image/svg+xml" />
-    <link rel="main-icon" href="./images/main-icon.png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -17,26 +17,27 @@
   <body class="page">
     <header class="header content-width">
       <h1 class="haeder__title">&lt;/html&gt;</h1>
-      <h2 class="haeder__subtitle">Закрывающий тег</h2>
+      <p class="haeder__subtitle">Закрывающий тег</p>
     </header>
     <main class="main content-width">
       <article class="card">
-        <h3 class="card__title card__block">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
-        <div class="card__image-block">
+        </h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/20-min.avif" type="image/avif" />
             <source srcset="./images/20-min.webp" type="image/webp" />
             <img
               src="./images/20-min.jpg.jpg"
               alt="Немного шакальные Рик и Морти собираются в приключение на 20 минут"
+              loading="lazy"
               class="card__image filter-blur-invert"
             />
           </picture>
-          <span class="image-label" aria-hidden="true"> &lt;20 минут&gt; </span>
-        </div>
-        <div class="card__footer card__block">
+          <figcaption class="image-label"> &lt;20 минут&gt; </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -46,7 +47,7 @@
             <p class="card__text">"Давай! Вошли и вышли!".</p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -82,27 +83,28 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">1 спринт: Я — чистый лист</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Тусклый грузовичек со страхом чистого листа"
+              loading="lazy"
               class="card__image filter-grayscale"
             />
           </picture>
-          <span class="image-label" aria-hidden="true"> &lt;/html&gt; </span>
-        </div>
-        <div class="card__footer card__block">
+          <figcaption class="image-label"> &lt;/html&gt; </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               На первых этапах мы работали со страхами и сомнениями, которые
@@ -116,7 +118,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -150,27 +152,28 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">1 спринт: А если не получится?</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Насыщенный воодушевленный грузовичек"
+              loading="lazy"
               class="card__image filter-saturate"
             />
           </picture>
-          <span class="image-label" aria-hidden="true"> &lt;css&gt; </span>
-        </div>
-        <div class="card__footer card__block">
+          <figcaption class="image-label"> &lt;css&gt; </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
@@ -182,7 +185,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -216,29 +219,30 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">2 спринт: Погоня за идеалом</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Грузовичек-перфекционист"
+              loading="lazy"
               class="card__image filter-hue-rotate"
             />
           </picture>
-          <span class="image-label" aria-hidden="true">
+          <figcaption class="image-label">
             &lt;desigions&gt;
-          </span>
-        </div>
-        <div class="card__footer card__block">
+          </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
@@ -252,7 +256,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -286,27 +290,28 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">2 спринт: О тех, кто рядом</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Заботливый грузовичек в негативном фильтре"
+              loading="lazy"
               class="card__image filter-invert"
             />
           </picture>
-          <span class="image-label" aria-hidden="true"> care </span>
-        </div>
-        <div class="card__footer card__block">
+          <figcaption class="image-label"> care </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               Всё это время вы были не одиноки (хотя, возможно, иногда и
@@ -321,7 +326,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -355,27 +360,28 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">3 спринт: Обходные стратегии</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Грузовичек с фильтром сепия в поиске новых решений"
+              loading="lazy"
               class="card__image filter-sepia"
             />
           </picture>
-          <span class="image-label" aria-hidden="true"> &lt;support&gt; </span>
-        </div>
-        <div class="card__footer card__block">
+          <figcaption class="image-label"> &lt;support&gt; </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
@@ -387,7 +393,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -421,29 +427,30 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">3 спринт: Когда опускаются руки</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/bus.avif" type="image/avif" />
             <source srcset="./images/bus.webp" type="image/webp" />
             <img
               src="./images/bus.jpg"
               alt="Уставший размытый грузовичек"
+              loading="lazy"
               class="card__image filter-blur"
             />
           </picture>
-          <span class="image-label" aria-hidden="true">
+          <figcaption class="image-label">
             &lt;lifes-style: none;&gt;
-          </span>
-        </div>
-        <div class="card__footer card__block">
+          </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               Во время учёбы часто возникает чувство, когда не знаешь, за что
@@ -457,7 +464,7 @@
             </p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -491,29 +498,30 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
         </div>
       </article>
       <article class="card">
-        <h3 class="card__title card__block">«Сейчас я здесь»</h3>
-        <div class="card__image-block">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <figure class="card__image-block">
           <picture>
             <source srcset="./images/4-sprints-later.avif" type="image/avif" />
             <source srcset="./images/4-sprints-later.webp" type="image/webp" />
             <img
               src="./images/4-sprints-later.jpg"
               alt="Уже не шакальные Рик и Морти 4 спринта спустя"
+              loading="lazy"
               class="card__image"
             />
           </picture>
-          <span class="image-label" aria-hidden="true">
+          <figcaption class="image-label">
             &lt;4 sprints later&gt;
-          </span>
-        </div>
-        <div class="card__footer card__block">
+          </figcaption>
+        </figure>
+        <div class="card__footer">
           <div class="card__text-block">
             <p class="card__text">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
@@ -526,7 +534,7 @@
             <p class="card__text">"Если верстка "изи", что будет в JS???"</p>
           </div>
           <div class="card__buttons-block">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="Like">
               <svg
                 width="39"
                 height="36"
@@ -560,7 +568,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">like</span>
             </button>
           </div>
@@ -568,6 +576,8 @@
       </article>
       <button
         class="save-button button"
+        type="Сохранить на память"
+        type="button"
         onclick="document.getElementById('save-popup').showModal()"
       >
         <svg
@@ -594,6 +604,7 @@
       <div class="save-popup__button">
         <button
           class="close-popup-button button"
+          type="button"
           onclick="document.getElementById('save-popup').close()"
         >
           <span class="button__text">ok</span>

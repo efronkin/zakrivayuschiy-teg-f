@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: sans-serif;
+  font-family: var(--main-font), sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@
   margin: 100px 0;
   padding-block: clamp(119px, 8.9vw, 126px);
   border: 2px solid var(--border-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   background-color: var(--bg-color);
 }
 
@@ -71,7 +71,7 @@
 
 .card__title {
   font-size: var(--main-font-size);
-  font-weight: var(--title-weight);
+  font-variation-settings: 'wght' var(--title-weight);
   line-height: 1.2;
   padding: 5px 10px;
 }
@@ -79,6 +79,7 @@
 .card__image-block {
   position: relative;
   overflow: hidden;
+  margin: 0;
   border-bottom: 2px solid var(--border-color);
   border-top: 2px solid var(--border-color);
 }
@@ -86,7 +87,7 @@
 .card__image {
   display: block;
   inline-size: 100%;
-  /*aspect-ratio: 1 / 1;*/ /*закомментил при замене картинок, но решил не удалять*/
+  aspect-ratio: 1 / 1; /*закомментил при замене картинок, но решил не удалять*/
   object-fit: cover;
   /*object-position: right center;*/
 }
@@ -123,7 +124,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--accent-font-size);
   text-shadow: -1px -1px 0 var(--shadow-color), 1px -1px 0 var(--shadow-color),
     -1px 1px 0 var(--shadow-color), 1px 1px 0 var(--shadow-color);
@@ -143,7 +144,7 @@
 }
 
 .card__footer {
-  padding: 27px 25px 20px;
+  padding: 25.5px 25px 25px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -167,6 +168,7 @@
   cursor: pointer;
   padding-inline: 0;
   border: 2px solid transparent;
+  block-size: 38px;
 }
 
 .card__icon-button:focus-visible {
@@ -242,32 +244,8 @@
   animation: click-change-color 0.3s ease-in 0.3s 1;
 }
 
-@keyframes click-scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes click-change-color {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .button {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   background-color: transparent;
@@ -341,14 +319,15 @@
 dialog[open] {
   display: grid;
   gap: 30px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--accent-font-size);
-  font-weight: var(--main-text-weight);
+  font-variation-settings: 'wght' var(--main-text-weight);
+  line-height: 1.5;
   padding-block: 30px;
   padding-inline: clamp(
     30px,
-    calc(30px + (12 * ((1440px - 100vw) / 1065))),
-    42px
+    calc(30px + (10 * ((1440px - 100vw) / 1065))),
+    40px
   );
   inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
 }
@@ -364,11 +343,12 @@ dialog::backdrop {
 .save-popup__text {
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
   gap: 20px;
 }
 
 .close-popup-button {
-  padding: 12.5px;
+  padding: 10px;
   inline-size: 100%;
   text-transform: uppercase;
 }
@@ -380,5 +360,9 @@ dialog::backdrop {
 
   .icon {
     width: 28px;
+  }
+
+  .image-label {
+    right: 13px;
   }
 }
